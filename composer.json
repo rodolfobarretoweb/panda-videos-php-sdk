@@ -18,7 +18,8 @@
   },
   "autoload": {
     "psr-4": {
-      "PandaVideosPhpSdk\\": "src/"
+      "PandaVideosPhpSdk\\": "src/",
+      "PandaVideosPhpSdk\\Traits\\": "src/traits/"
     }
   }
 }
