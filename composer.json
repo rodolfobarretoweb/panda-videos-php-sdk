@@ -3,9 +3,6 @@
   "description": "Panda videos php sdk",
   "type": "library",
   "minimum-stability" : "stable",
-  "required": {
-    "php": ">=7.1.0"
-  },
   "authors": [
     {
       "name": "Rodolfo Ribeiro Barreto",
