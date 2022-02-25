@@ -1,0 +1,28 @@
+{
+  "name": "panda-videos/php-sdk",
+  "description": "Panda videos php sdk",
+  "type": "library",
+  "minimum-stability" : "stable",
+  "required": {
+    "php": ">=7.1.0"
+  },
+  "authors": [
+    {
+      "name": "Rodolfo Ribeiro Barreto",
+      "email": "rodolfobarretoweb@gmail.com"
+    }
+  ],
+  "config" : {
+    "vendor-dir" : "vendor",
+    "bin-dir" : "bin"
+  },
+  "require": {
+    "guzzlehttp/guzzle": "7.4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PandaVideosPhpSdk\\Core\\": "src/core/",
+      "PandaVideosPhpSdk\\Modules\\": "src/modules/"
+    }
+  }
+}
