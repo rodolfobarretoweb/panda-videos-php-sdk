@@ -17,7 +17,7 @@
     "bin-dir" : "bin"
   },
   "require": {
-    "guzzlehttp/guzzle": "7.4.1"
+    "guzzlehttp/guzzle": "6.3.3"
   },
   "autoload": {
     "psr-4": {
