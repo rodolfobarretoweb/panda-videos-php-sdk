@@ -1,11 +1,12 @@
 <?php
-namespace PandaVideosPhpSdk\Traits;
+namespace PandaVideosPhpSdk\Modules;
 
 trait Video {
-  use Response;
+  use \PandaVideosPhpSdk\Utils\Response;
 
   public function getVideoProperties($video_id) {
     $response = $this->client->request('GET', "/videos/{$video_id}");
+    
     return $this->display($response);
   }
 }
