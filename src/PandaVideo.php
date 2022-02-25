@@ -4,7 +4,7 @@ namespace PandaVideosPhpSdk;
 use GuzzleHttp\Client as GuzzleClient;
 
 class PandaVideo {
-  use Traits\Video;
+  use Modules\Video;
 
   protected $client;
 
