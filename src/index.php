@@ -1,9 +1,9 @@
 <?php
-namespace PandaVideosPhpSdk\Core;
+namespace PandaVideosPhpSdk;
 
 use GuzzleHttp\Client as GuzzleClient;
 
-class Base {
+class PandaVideo {
   protected $client;
 
   public function __construct($apiKey) {

@@ -18,8 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PandaVideosPhpSdk\\Core\\": "src/core/",
-      "PandaVideosPhpSdk\\Modules\\": "src/modules/"
+      "PandaVideosPhpSdk\\": "src/"
     }
   }
 }
