@@ -19,13 +19,35 @@ Importe este repositório no seu projeto utilizando o composer:
 }
 ```
 
-Um exemplo de uso
+###### Exemplos
+
+Um exemplo de uso para pegar as propriedades de um vídeo específico
 ```
 <?php
 use PandaVideosPhpSdk\PandaVideo;
 
-$video = new PandaVideo(Env::PANDA_VIDEOS_API_KEY);
+$video = new PandaVideo([
+  'apiKey' => Env::PANDA_VIDEOS_API_KEY,
+  'referer' => 'dominio-cadastrado-no-dashboard.com.br'
+]);
+
 $videoResponse = $video->getVideoById('video-id');
+```
+
+--------------------------------------------------
+
+Utilizando os links extraídos do vídeo
+```
+<?php
+use PandaVideosPhpSdk\PandaVideo;
+
+$video = new PandaVideo([
+  'apiKey' => Env::PANDA_VIDEOS_API_KEY,
+  'referer' => 'dominio-cadastrado-no-dashboard.com.br'
+]);
+
+$videoResponse = $video->getVideoById('video-id');
+$thumbStream = $video->getVideoResourceFromUrl($videoResponse->thumbnail);
 ```
 
 ###### Recado para desenvolvedores que desejam ajudar

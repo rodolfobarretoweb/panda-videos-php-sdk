@@ -8,11 +8,12 @@ class PandaVideo {
 
   protected $client;
 
-  public function __construct($apiKey) {
+  public function __construct($params) {
     $this->client = new GuzzleClient([
       'base_uri' => 'https://api-v2.pandavideo.com.br',
       'headers' => [
-        'Authorization' => $apiKey,
+        'Authorization' => $params['apiKey'],
+        'Referer' => $params['referer'],
         'Accept' => 'application/json'
       ]
     ]);
