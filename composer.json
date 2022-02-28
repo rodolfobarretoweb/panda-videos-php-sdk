@@ -2,6 +2,7 @@
   "name": "panda-videos/php-sdk",
   "description": "Panda videos php sdk",
   "type": "library",
+  "version": "0.2.1",
   "minimum-stability" : "stable",
   "authors": [
     {
