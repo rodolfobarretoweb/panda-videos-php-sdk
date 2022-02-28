@@ -21,6 +21,9 @@ Importe este repositório no seu projeto utilizando o composer:
 
 Um exemplo de uso
 ```
+<?php
+use PandaVideosPhpSdk\PandaVideo;
+
 $video = new PandaVideo(Env::PANDA_VIDEOS_API_KEY);
 $videoResponse = $video->getVideoById('video-id');
 ```
