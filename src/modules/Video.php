@@ -10,7 +10,7 @@ trait Video {
     return $this->displayData($response);
   }
 
-  public function getVideoResourceFromUrl($url) {
+  public function getVideoThumbnailFile($url) {
     $response = $this->client->request('GET', $url, ['stream' => true]);
     
     return $this->getFileStream($response);

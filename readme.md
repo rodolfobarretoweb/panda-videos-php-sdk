@@ -36,7 +36,7 @@ $videoResponse = $video->getVideoById('video-id');
 
 --------------------------------------------------
 
-Utilizando os links extraídos do vídeo
+Download da thumbnail do vídeo
 ```
 <?php
 use PandaVideosPhpSdk\PandaVideo;
@@ -47,7 +47,7 @@ $video = new PandaVideo([
 ]);
 
 $videoResponse = $video->getVideoById('video-id');
-$thumbStream = $video->getVideoResourceFromUrl($videoResponse->thumbnail);
+$thumbStream = $video->getVideoThumbnailFile($videoResponse->thumbnail);
 ```
 
 ###### Recado para desenvolvedores que desejam ajudar
