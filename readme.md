@@ -47,7 +47,7 @@ $video = new PandaVideo([
 ]);
 
 $videoResponse = $video->getVideoById('video-id');
-$thumbStream = $video->getVideoThumbnailFile($videoResponse->thumbnail);
+$thumbStream = $video->downloadVideoThumbnail($videoResponse->thumbnail);
 ```
 
 ###### Recado para desenvolvedores que desejam ajudar
